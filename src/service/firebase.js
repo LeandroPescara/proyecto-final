@@ -1,9 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.css";
-import { ChakraProvider } from "@chakra-ui/react";
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -21,10 +15,3 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <ChakraProvider>
-    <App />
-  </ChakraProvider>
-);

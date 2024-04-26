@@ -1,13 +1,359 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Ruwudu&display=swap");
+
+.chakra-ui-light {
+  background-color: #54835a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Nav*/
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(2, 85, 39);
+  gap: 40vh;
+  height: 20vh;
+
+  .css-k008qs {
+    display: flex;
+    width: 80%;
+    align-items: center;
+
+    .css-kjvu41 {
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 5px;
+      font-weight: bold;
+    }
+
+    .categorias {
+      margin-left: 50px;
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .css-kjvu41:hover {
+      background-color: #dac8c8;
+      color: black;
+    }
+    .categoria:hover {
+      background-color: #dac8c8;
+    }
+
+    .buttonMenu {
+      padding: 20px 35px 20px 35px;
+      background-color: rgb(117, 83, 40);
+      color: #d1c8af;
+    }
+  }
+
+  a {
+    width: 100%;
+  }
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .cantCart {
+    font-weight: bold;
+    font-size: xx-large;
+    background-color: rgba(117, 84, 40, 0.644);
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.cantP {
+  font-weight: bold;
+  font-size: large;
+}
+
+.platonico {
+  width: 15px;
+  height: 10px;
+}
+
+.imgCarrito {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.imgCarrito:hover {
+  background-color: whitesmoke;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  .chakra-card {
+    background-color: rgb(190, 190, 190);
+  }
+}
+
+.css-18heqsi {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.itemContador {
+  display: flex;
+  align-items: center;
+
+  .buttonCont {
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+  }
+  .buttonCont:hover {
+    background-color: antiquewhite;
+    color: black;
+  }
+
+  .numCont {
+    font-size: x-large;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.eliminarProducto {
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.eliminarProducto:hover {
+  background-color: white;
+  color: red;
+  transition: 300ms;
+  transform: scale(1.1);
+}
+
+.eliminarCarrito {
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.eliminarCarrito:hover {
+  background-color: black;
+  color: red;
+  transition: 300ms;
+  transform: scale(1.1);
+}
+
+.css-11jlpvc {
+  width: 100%;
+  height: 450px;
+}
+
+.css-1gottk {
+  display: flex;
+  align-items: center;
+}
+
+.css-i6ew5e {
+  background-color: #645c5c;
+}
+
+.cardDetail {
+  grid-column: 2;
+}
+
+.css-12omlr9:hover {
+  color: black;
+}
+.css-1ueq6p5:hover {
+  color: black;
+}
+
+.cartMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(194, 194, 194, 0.185);
+  width: 100%;
+}
+
+.mainCartEntero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finalizarCompra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50px;
+  background-color: rgba(138, 111, 79, 0.185);
+  border: 1px solid black;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.finalizarCompra:hover {
+  background-color: rgb(138, 111, 79);
+  color: white;
+}
+
+.contenedorNoProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+}
+
+.noProducts {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.tituloNoProducts {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: rgba(139, 2, 2, 0.822);
+}
+
+.mainForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contenedorForm {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 600px;
+}
+
+.tituloForm {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.campoForm {
+  width: 100%;
+  padding: 10px;
+  margin: 0px 10px 10px 0px;
+}
+
+.enviarForm {
+  padding: 10px 20px 10px 20px;
+  background: gainsboro;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.enviarForm:hover {
+  background: #645c5c;
+  color: white;
+}
+
+.enviarForm2 {
+  padding: 10px 20px 10px 20px;
+  background: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.enviarForm2:hover {
+  background: #645c5c;
+  color: white;
+}
+
+.idForm {
+  display: flex;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+.id {
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.volverProduct {
+  margin-top: 20px;
+  padding: 10px 20px 10px 20px;
+  background: gainsboro;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.volverProduct:hover {
+  background: #645c5c;
+  color: white;
+}
+
+.loader {
+  width: 96px;
+  height: 96px; 
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 8px solid #fff;
+  border-right: 8px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 0 auto; 
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 96px; 
+  height: 96px; 
+  border-radius: 50%;
+  border-bottom: 8px solid #ff3d00;
+  border-left: 8px solid transparent;
+}
+
+.containerLoader {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
